@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados com a Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💧 Cuidados com a Água</h1>
+        <p>Pequenas atitudes fazem uma grande diferença.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Por que economizar água?</h2>
+            <p>
+                A água é essencial para a vida. Mesmo sendo abundante no planeta,
+                apenas uma pequena parte é própria para consumo humano.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Dicas para economizar</h2>
+
+            <ul id="lista-dicas">
+                <li>Feche a torneira ao escovar os dentes.</li>
+                <li>Tome banhos mais curtos.</li>
+                <li>Conserte vazamentos rapidamente.</li>
+                <li>Reutilize água sempre que possível.</li>
+            </ul>
+
+            <button onclick="mostrarDica()">
+                Mostrar Nova Dica
+            </button>
+
+            <p id="dica-extra"></p>
+        </section>
+
+        <section class="card">
+            <h2>Consumo Consciente</h2>
+
+            <label for="tempo">
+                Quantos minutos dura seu banho?
+            </label>
+
+            <input type="number" id="tempo" placeholder="Ex: 10">
+
+            <button onclick="calcularConsumo()">
+                Calcular Consumo
+            </button>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Projeto Educação Ambiental</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
